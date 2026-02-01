@@ -10,6 +10,11 @@ Because the EyePop model is cloud-based and may be subject to connectivity or av
 
 The demo files in this GitHub repository simulate how the EyePop and YOLOv8 models would function in a real-world monitoring system. Example use cases include deployment in forests, schools, universities, large buildings, and other high-risk environments where early fire detection and human safety are critical.
 
+The following files simulate the computer vision models working with potential scenarios:
+- Eyepop_demo.py (Uses the cloud EyePop model to take in an image and output the criticality index for that image)
+- yolo_fire_detection_image.py (Uses the locally run YOLOv8 CV model to take in an image and output the processed image marking fire, smoke (lower accuracy for smoke), and people in danger)
+- camera_demo.py (Uses the video feed from a Window's camera to simulate it analyzing real-time videos for fire risks and potential people in danger)
+
 Datasets used:
 - Smoke and fire detection dataset:
   - https://www.kaggle.com/datasets/sayedgamal99/smoke-fire-detection-yolo/data
